@@ -1,0 +1,18 @@
+>> command to list the files in current directory
+ls
+>> we can use "touch" command to create an empty file, example "touch file_name"
+>> command to search for a word
+grep word file_name
+Example:
+grep fetching * --> this will search for the word fetching in all the files in current directory
+grep fetching log_04072025 --> this will search for the word fetching in log_04072025 file
+
+>> how can i display the content of a file
+cat file_name
+
+>> how can I edit the file
+use vim editor
+step-1: vim file_name
+step-2: type the letter "i" in your keyboard to enter in to write mode
+step-3: start writing the content in to the file
+step-4: type "esc" then type ":wq"
