@@ -1,0 +1,11 @@
+git clone https://github.com/santhoshmail2u/devops_0307.git
+cd devops_0307
+git checkout branch_name
+### Task: create a file with some content in side it, then push to git repo
+## commands to run one time 
+git config --global user.email "emailid"
+git config --global user.name "yourname"
+##
+git add .
+git commit -m "commit message"
+git push origin branch_name
