@@ -1,0 +1,16 @@
+Step-1: create a ubuntu vm (make sure to download the .pem file Private key)
+Step-2(if your on windows m/c use gitbash): In the local machine change the directory to .pem file downloaded location
+example: cd Dwonloads 
+Step-3: run ssh command to connect to ubuntu vm
+ssh -i ./pem_file_name.pem username@public_ip_of_vm
+Step-4: run the following commands to install apache
+>> sudo apt update -- to update packages
+>> sudo apt install apache2 -y
+Step-5: Go to the browser hit the url https://public_ip_of_vm
+
+Practice: cd /var/www/html
+you can see index.html -- this is the page which is being loaded/displayed by apache server
+you can modify the content of this file and verify the outcome on browser
+
+sudo su -- login as super user (root)
+echo "some message" > index.html
