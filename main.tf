@@ -4,22 +4,18 @@ resource "azurerm_resource_group" "example" {
     tags = local.tags
 }
 
-data "azurerm_resource_group" "example" {
-    name = "learning"
-}
-
 locals {
     tags = {"env":"dev"}
 }
 
 output "rg_name" {
-  value = "my rg name is : ${data.azurerm_resource_group.example.name}"
+  value = "my rg name is : ${azurerm_resource_group.example.name}"
 }
 
 output "rg_location" {
-  value = data.azurerm_resource_group.example.location
+  value = azurerm_resource_group.example.location
 }
 
 output "rg_id" {
-  value = data.azurerm_resource_group.example.id
+  value = azurerm_resource_group.example.id
 }
