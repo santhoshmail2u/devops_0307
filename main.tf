@@ -23,7 +23,3 @@ output "rg_location" {
 output "rg_id" {
   value = data.azurerm_resource_group.example.id
 }
-
-variable "client_secret" {
-  sensitive = true
-}
